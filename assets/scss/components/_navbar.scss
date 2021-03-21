@@ -4,12 +4,23 @@
         font-weight: 700;
     }
     .nav-item {
+        cursor: pointer;
         display: flex;
         align-items: center;
         margin-left: 22.5px;
         &.active {
             .nav-link {
                 font-weight: 600;
+            }
+        }
+    }
+    .navbar-nav.icon {
+        .darkmode-btn {
+            svg {
+                display: block;
+            }
+            svg:last-child {
+                display: none;
             }
         }
     }

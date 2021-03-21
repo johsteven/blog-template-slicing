@@ -55,9 +55,6 @@
 }
 
 @media (max-width: 498px) {
-    .content {
-        margin-top: 5.5rem;
-    }
     .populer-blog {
         flex-direction: column;
         margin-bottom: 70px;
@@ -87,5 +84,11 @@
     }
     .contact-form {
         padding: 1rem
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin-top: 5.5rem !important;
     }
 }

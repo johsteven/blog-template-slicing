@@ -1,13 +1,15 @@
 .footer {
-    background-color: $primary-color;
-    color: #fff;
+    background-color: rgb(230, 230, 230);
+    color: $text-color;
     padding: 1.75rem;
+    max-width: 1400px;
+    margin: auto;
     .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         a {
-            color: #fff;
+            color: $text-color;
             margin: 0 20px
         }
     }

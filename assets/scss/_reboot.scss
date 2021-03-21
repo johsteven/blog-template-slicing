@@ -17,8 +17,9 @@ html {
 }
 
 body {
-    height: 100%;
+    transition: .3s;
     width: 100%;
+    height: auto;
     position: relative;
     background-color: #fff;
     font-family: 'Poppins', sans-serif !important;

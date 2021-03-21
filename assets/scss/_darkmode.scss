@@ -1,0 +1,47 @@
+body.darkmode {
+    background-color: $darkmode-color;
+    * {
+        color: #fff !important;
+        stroke: #fff !important;
+    }
+    .navbar {
+        background-color: $darkmode-color !important;
+        .navbar-nav {
+            background-color: $darkmode-color !important;
+        }
+        .navbar-nav.icon {
+            .darkmode-btn {
+                svg {
+                    display: none;
+                }
+                svg:last-child {
+                    display: block;
+                }
+            }
+        }
+    }
+    .label-text {
+        background-color: $darkmode-color-lighten;
+        &.active {
+            background-color: $primary-color;
+        }
+    }
+    .contact-form {
+        background-color: $darkmode-color-lighten;
+    }
+    .pagination {
+        .page-item {
+            .page-link {
+                background-color: $darkmode-color-lighten;
+            }
+            &.active {
+                .page-link {
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }
+    .footer {
+        background-color: $darkmode-color-lighten;
+    }
+}

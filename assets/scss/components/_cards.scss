@@ -1,5 +1,6 @@
 .card {
     border: none;
+    background-color: transparent;
     transition: .25s ease-in-out;
     &-header {
         background-color: transparent;
@@ -46,8 +47,8 @@
                 .icon {
                     margin-right: 10px;
                     background-color: $primary-color;
-                    width: 27.5px;
-                    height: 27.5px;
+                    width: 17.5px;
+                    height: 17.5px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -60,7 +61,7 @@
         }
         &:hover,
         &:focus {
-            box-shadow: 0 6px 10px rgba($color: $text-color, $alpha: .145);
+            box-shadow: 0 6px 10px rgba($color: $text-color, $alpha: .1);
         }
     }
     &.about {
@@ -74,7 +75,10 @@
                 height: 50px;
                 margin-right: 10px;
             }
-            h6 {
+            a {
+                font-size: .975rem;
+                font-weight: 600;
+                color: $text-color;
                 margin-bottom: 2.5px;
             }
             p {
@@ -94,6 +98,18 @@
             padding-left: 0;
             padding-right: 0;
             padding-top: .5rem;
+        }
+    }
+}
+
+@media (max-width: 498px) {
+    .card {
+        &.blog-post {
+            .card-header {
+                .blog-img {
+                    border-radius: 20px;
+                }
+            }
         }
     }
 }

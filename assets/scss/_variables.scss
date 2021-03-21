@@ -1,2 +1,4 @@
 $primary-color: #0069cc;
+$darkmode-color: #272727;
+$darkmode-color-lighten: lighten($color: $darkmode-color, $amount: 5);
 $text-color: #202020;
