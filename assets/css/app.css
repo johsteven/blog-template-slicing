@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
   width: 100%;
   height: auto;
   position: relative;
@@ -144,40 +144,6 @@ sele {
 }
 .card.blog-post:hover, .card.blog-post:focus {
   box-shadow: 0 6px 10px rgba(32, 32, 32, 0.1);
-}
-.card.about .card-header {
-  padding-left: 0;
-  padding-right: 0;
-  display: flex;
-}
-.card.about .card-header img {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}
-.card.about .card-header a {
-  font-size: 0.975rem;
-  font-weight: 600;
-  color: #202020;
-  margin-bottom: 2.5px;
-}
-.card.about .card-header p {
-  font-size: 12px;
-}
-.card.about .card-body {
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0.5rem;
-}
-.card.about .card-body p {
-  font-size: 13.5px;
-  line-height: 1.6;
-}
-.card.about .card-footer {
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0.5rem;
 }
 
 @media (max-width: 498px) {
@@ -315,6 +281,41 @@ sele {
     margin-top: 32.5px;
   }
 }
+.about-header {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+}
+.about-header img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.about-header a {
+  font-size: 0.975rem;
+  font-weight: 600;
+  color: #202020;
+  margin-bottom: 2.5px;
+}
+.about-header p {
+  font-size: 12px;
+}
+.about-body {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0.5rem;
+}
+.about-body p {
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+.about-footer {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0.5rem;
+}
+
 .populer-blog {
   height: 140px;
   display: flex;
@@ -442,7 +443,8 @@ sele {
   font-weight: 500;
 }
 .post-desc .post-author .bio {
-  color: #949494;
+  font-size: 12px;
+  color: #949494 !important;
 }
 .post-desc .scmd {
   display: flex;
@@ -513,6 +515,9 @@ body.darkmode {
 body.darkmode * {
   color: #fff !important;
   stroke: #fff !important;
+}
+body.darkmode input {
+  color: #202020 !important;
 }
 body.darkmode .navbar {
   background-color: #272727 !important;

@@ -4,6 +4,9 @@ body.darkmode {
         color: #fff !important;
         stroke: #fff !important;
     }
+    input {
+        color: $text-color !important;
+    }
     .navbar {
         background-color: $darkmode-color !important;
         .navbar-nav {
